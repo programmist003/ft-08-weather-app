@@ -1,0 +1,21 @@
+html {
+    height: 100vh;
+    color-scheme: dark;
+}
+
+body {
+
+    min-height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+main {
+    width: fit-content;
+    grid-template-areas:
+        "place place icon"
+        "temperature temperature temperature"
+        "speed speed direction";
+    ;
+}
