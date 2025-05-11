@@ -1,6 +1,7 @@
 html {
     height: 100vh;
-    color-scheme: dark;
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
 }
 
 body {
@@ -13,13 +14,22 @@ body {
 
 main {
     display: grid;
-    width: fit-content;
     grid-template-areas:
         "place place icon"
-        "temperature temperature temperature"
+        "temperature temperature ."
         "speed speed direction";
     align-items: center;
 }
 #direction{
     text-align: center;
+    font-size: 2rem;
+}
+#place{
+    font-size: inherit;
+}
+form>button>img{
+    height: 1rem;
+}
+#icon>img{
+    height: 4rem;
 }
