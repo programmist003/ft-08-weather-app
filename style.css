@@ -20,3 +20,6 @@ main {
         "speed speed direction";
     align-items: center;
 }
+#direction{
+    text-align: center;
+}
