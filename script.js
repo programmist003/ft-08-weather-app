@@ -1,4 +1,4 @@
-const apikey = 'YOUR_API_KEY';
+const apikey = '7ea82d25aa9841ac93085830251105';
 const form = document.querySelector('form');
 const icon = document.querySelector('#icon');
 const temperature = document.querySelector('#temperature');
@@ -17,9 +17,13 @@ form.addEventListener('submit', (event) => {
                 speed.textContent = data.current.wind_kph;
                 direction.textContent = getArrow(data.current.wind_degree);
             })
-            .catch(error => console.error(error));
+            .catch(error => console.error(error));   
     }
+    return false;
 });
+form.dispatchEvent(new Event('submit', {
+    cancelable: true
+  }))
 
 function getArrow(deg) {
     const arrows = ['↑', '↗', '→', '↘', '↓', '↙', '←', '↩'];

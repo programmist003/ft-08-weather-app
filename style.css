@@ -12,10 +12,11 @@ body {
 }
 
 main {
+    display: grid;
     width: fit-content;
     grid-template-areas:
         "place place icon"
         "temperature temperature temperature"
         "speed speed direction";
-    ;
+    align-items: center;
 }

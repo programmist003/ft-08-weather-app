@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Прогноз погоды</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <main>
-        <form action="" style="grid-area: place;">
+        <form action="" style="grid-area: place;" onsubmit="return false">
             <input id="place" type="text">
             <button type="submit">Обновить</button>
         </form>
